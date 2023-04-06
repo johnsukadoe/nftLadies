@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+ul[class], ol[class] {
+  padding: 0; }
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul[class], ol[class] {
+  list-style: none; }
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+article > * + * {
+  margin-top: 1em; }
+
+input, button, textarea, select {
+  font: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+body {
+  font-family: "Lato", sans-serif;
+  max-width: 1217px;
+  margin: 0 auto;
+  background-color: #330043; }
+
+.header {
+  margin: 40px 0 80px 0; }
+
+.menu {
+  display: flex;
+  justify-content: space-between; }
+
+.menu-list {
+  display: flex;
+  gap: 50px; }
+  .menu-list a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 1s ease; }
+    .menu-list a:hover {
+      color: #e69cff; }
+
+.socialMedia {
+  display: flex;
+  gap: 25px; }
+  .socialMedia li {
+    transition: all 1s ease; }
+    .socialMedia li:hover {
+      filter: hue-rotate(285deg); }
+
+.header-main {
+  display: flex;
+  justify-content: space-between; }
+
+.main-left {
+  max-width: 600px; }
+  .main-left .heading {
+    font-family: "Fredoka One";
+    color: #F4DEFF;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 50px; }
+  .main-left .subtitle {
+    background-image: linear-gradient(90deg, #94DFFF, #F4DEFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #F4DEFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px; }
+  .main-left .subtitle2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #F4F4F4;
+    margin-bottom: 50px; }
+  .main-left .btn {
+    position: relative;
+    padding: 23px 77px;
+    background: #FF0087;
+    border-radius: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #F4F4F4;
+    border: 0;
+    text-decoration: none;
+    animation: background 3s infinite alternate;
+    transition: all 1s; }
+    .main-left .btn:hover {
+      transform: translate(0, -9px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .main-left .btn:active {
+      transition: all 0.1s;
+      transform: translate(0, -4px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+@keyframes background {
+  50% {
+    background: #761594; } }
+.main-right {
+  display: flex;
+  background: radial-gradient(50% 50% at 50% 50%, #761594 0%, rgba(51, 0, 67, 0.66) 100%);
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */

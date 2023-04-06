@@ -1,0 +1,117 @@
+//font-family: 'Fredoka One', cursive;
+$main-color:#330043;
+$main-font:'Lato', sans-serif;
+body{
+  font-family: $main-font;
+  max-width: 1217px;
+  margin: 0 auto;
+  background-color: $main-color;
+}
+.header{
+  margin: 40px 0 80px 0;
+}
+.menu{
+  display:flex;
+  justify-content: space-between;
+}
+.menu-list{
+  display:flex;
+  gap:50px;
+  a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 1s ease;
+    &:hover{
+      color: #e69cff;
+    }
+  }
+
+}
+.socialMedia{
+  display: flex;
+  gap:25px;
+  li{
+    transition: all 1s ease;
+    &:hover{
+      filter: hue-rotate(285deg);
+    }
+  }
+}
+
+
+.header-main{
+  display: flex;
+  justify-content:space-between;
+
+}
+.main-left{
+  max-width: 600px;
+  .heading{
+    font-family:"Fredoka One";
+    color:#F4DEFF;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 50px;
+  }
+  .subtitle{
+    background-image: linear-gradient(90deg, #94DFFF, #F4DEFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #F4DEFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .subtitle2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #F4F4F4;
+    margin-bottom: 50px;
+  }
+  .btn{
+    position: relative;
+    padding:23px 77px;
+    background: #FF0087;
+    border-radius: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #F4F4F4;
+    border:0;
+    text-decoration: none;
+    animation: background 3s infinite alternate;
+    transition: all 1s;
+    &:hover{
+      transform: translate(0,-9px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    }
+    &:active{
+      transition: all 0.1s;
+      transform: translate(0, -4px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  @keyframes background {
+    50% {
+      background: #761594;
+    }
+  }
+}
+.main-right{
+  display: flex;
+  background: radial-gradient(50% 50% at 50% 50%, #761594 0%, rgba(51, 0, 67, 0.66) 100%);
+  align-items: center;
+}
